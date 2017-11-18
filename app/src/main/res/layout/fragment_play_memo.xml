@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:layout_height="211dp"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:id="@+id/button_pause"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Pause" />
+
+
+    <rm.com.audiowave.AudioWaveView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/seekbar_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_pause"
+        app:animateExpansion="false"
+        app:chunkHeight="24dp"
+        app:chunkRadius="1dp"
+        app:chunkSpacing="1dp"
+        app:chunkWidth="3dp"
+        app:minChunkHeight="2dp"
+        app:rangeColor="@color/colorPrimaryDark"
+        app:waveColor="@android:color/white" />
+
+</RelativeLayout>
+
+</LinearLayout>

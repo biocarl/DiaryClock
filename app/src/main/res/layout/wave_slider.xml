@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout1"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="fill_parent" >
+
+
+    <rm.com.audiowave.AudioWaveView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/wave_slider_view"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        app:animateExpansion="false"
+        app:chunkHeight="24dp"
+        app:chunkRadius="1dp"
+        app:chunkSpacing="1dp"
+        app:chunkWidth="3dp"
+        app:minChunkHeight="2dp"
+        app:rangeColor="@color/colorPrimaryDark"
+        app:waveColor="@android:color/white" />
+
+
+    <com.appyvet.materialrangebar.RangeBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/range_bar"
+        android:layout_height="61dp"
+        app:mrb_pinMaxFont="10sp"
+        app:mrb_rangeBarPaddingBottom="12dp"
+        app:mrb_selectorBoundaryColor="@color/colorPrimary"
+        app:mrb_selectorBoundarySize="2dp"
+        app:mrb_pinTextColor="#ACD123"
+        app:mrb_selectorSize="10dp"
+        app:mrb_tickEnd="10"
+        app:mrb_tickInterval="1"
+        app:mrb_tickStart="5"/>
+
+    <Button
+        android:id="@+id/player_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pause" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/player_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/player_loop"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/player_stop"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="Loop" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/player_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+
+</LinearLayout>

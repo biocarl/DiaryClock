@@ -1,0 +1,64 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- General settings-->
+    <PreferenceCategory
+        android:key="general_category"
+        android:title="General">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="use-sd"
+            android:summary="A SD card has to be provided!"
+            android:title="Use SD card"
+            />
+
+    </PreferenceCategory>
+
+    <!-- Alarm clock settings-->
+    <PreferenceCategory
+        android:key="alarm_category"
+        android:title="Alarm Clock">
+
+        <RingtonePreference
+            android:dialogMessage="Customise Notification Ringtone for you"
+            android:dialogTitle="Notification Ringtone"
+            android:key="notification_ringtone"
+            android:summary="This ringtone will be played before the ringtone"
+            android:title="Select your wake up tone" />
+    </PreferenceCategory>
+
+    <!-- Sync settings-->
+    <PreferenceCategory
+        android:key="sync_category"
+        android:title="Sync and Cloud">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="cloud-sync"
+            android:summary="Connect with a Cloud Service"
+            android:title="Enable Cloud Sync"
+            />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="cache-all"
+            android:summary="All files in Cloud are downloaded"
+            android:title="Cache all"
+            />
+
+        <EditTextPreference
+            android:defaultValue="dropbox"
+            android:key="service-name"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Cloud Service Provider" />
+
+
+    </PreferenceCategory>
+
+    <!-- General settings-->
+
+</PreferenceScreen>

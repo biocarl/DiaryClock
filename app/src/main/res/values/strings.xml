@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DiaryClock v0.1</string>
+    <string name="MemoTag">Memo_</string>
+    <string name="database_file">diaryClock-db</string>
+    <string name="tab_description_database">Database</string>
+
+    <string name="recording_tag">rec</string>
+    <string name="memo_tag">memo</string>
+
+
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+</resources>
+
+

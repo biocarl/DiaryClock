@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <rm.com.audiowave.AudioWaveView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/wave_play_view"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:visibility="gone"
+        app:animateExpansion="false"
+        app:chunkHeight="24dp"
+        app:chunkRadius="1dp"
+        app:chunkSpacing="1dp"
+        app:chunkWidth="3dp"
+        app:minChunkHeight="2dp"
+        app:rangeColor="@color/colorPrimaryDark"
+        app:waveColor="@color/memo_list_file1" />
+
+
+    <Chronometer
+        android:id="@+id/record_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="0.08" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/record_progress"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:background="@drawable/play"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        />
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/store_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="... recording"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/redo_button"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="... record again"
+        android:textAllCaps="false" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <TableRow>
+
+        <RelativeLayout
+            android:text="other"
+            android:layout_gravity="center"
+            android:padding="3dip">
+
+            <NumberPicker
+                android:id="@+id/picker2"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/picker1"
+                android:layout_height="wrap_content">
+            </NumberPicker>
+
+
+            <NumberPicker
+                android:id="@+id/picker1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></NumberPicker>
+
+            </RelativeLayout>
+
+
+
+    </TableRow>
+</TableLayout>

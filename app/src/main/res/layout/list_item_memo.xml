@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_gravity="left"
+            android:padding="6dip">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="checkbox" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="26dip"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/checkbox"
+                android:max="5"
+                android:numStars="5"
+                android:rating="2.5"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/memo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/rating"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_toRightOf="@id/checkbox"
+                android:gravity="center_vertical"
+                android:text="Memo-Name"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/labels_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:padding="1mm"
+            android:paddingTop="2mm"
+            android:text="4565465assasssssss46"
+            android:layout_gravity="right" />
+
+
+    </LinearLayout>
+</LinearLayout>

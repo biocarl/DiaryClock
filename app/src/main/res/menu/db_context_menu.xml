@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/delete_menu"
+        android:orderInCategory="40"
+        android:title="Delete"
+        >
+        <menu>
+            <item android:id="@+id/delete_file"
+                android:title="Delete file" />
+            <item android:id="@+id/delete_memo"
+                android:title="Delete Memo" />
+        </menu>
+    </item>
+
+     <item
+        android:id="@+id/clone_memo"
+        android:orderInCategory="41"
+        android:title="Clone"
+        />
+    <item
+        android:id="@+id/edit_memo"
+        android:orderInCategory="42"
+        android:title="Edit"
+        />
+    <item
+        android:id="@+id/download_memo"
+        android:orderInCategory="43"
+        android:title="Download"
+        />
+    <item
+        android:id="@+id/play_memo"
+        android:orderInCategory="44"
+        android:title="Play"
+        />
+
+</menu>

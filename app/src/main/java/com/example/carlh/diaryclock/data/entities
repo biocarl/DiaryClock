@@ -1,0 +1,9 @@
+Recording
+    Memo
+        Tag
+
+Time
+    Memo
+
+Each Recording has several Memos (snippet of recording): (One-Many)
+One Memo can have several Tags, whereas Tags can also have many Memos: (Many-Many)

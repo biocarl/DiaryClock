@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- Colors related to waveform and range selection-->
+
+
+
+
+    <!--Colors related to Timelist-->
+    <color name="time_list_background">#7d8cde</color>
+
+
+    <!-- Colors related to MemoList  and sync-->
+
+    <color name="memo_list_file1">#7d8cde</color>
+    <color name="memo_list_file2">#626eaf</color>
+    <color name="memo_list_last_played">#a1d049</color>
+    <color name="memo_list_not_synced">#c75874</color>
+    <color name="memo_list_not_cached">#d2cdcfcc</color>
+
+    <color name="memo_sync_successful">#a1d049</color>
+    <color name="memo_sync_fail">#c75874</color>
+
+
+
+
+
+
+</resources>

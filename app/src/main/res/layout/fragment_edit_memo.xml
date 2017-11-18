@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity" >
+
+    <Button
+        android:id="@+id/save_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="SAVE" />
+
+    <TextView
+        android:id="@+id/labelViewShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save_entry"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:text="Labels" />
+
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/labelView"
+        android:layout_below="@+id/labelViewShow"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:text="label1,label2" />
+
+
+    <Button
+        android:id="@+id/edit_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/range_svg"
+        android:gravity="bottom"
+        android:text="set range"
+        android:textAlignment="center"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/field1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_range"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="UID" />
+
+
+    <TextView
+        android:id="@+id/uid_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/field1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:ems="10" >
+        <requestFocus />
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/field2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/uid_field"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="FileId" />
+
+
+
+
+    <TextView
+        android:id="@+id/fileId_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/field2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:ems="10" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/field3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fileId_field"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="Cached" />
+
+    <TextView
+        android:id="@+id/cached_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/field3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:ems="10" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/field4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cached_field"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="NotSynced" />
+
+
+
+
+    <TextView
+        android:id="@+id/notSynced_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/field4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:ems="10" >
+    </TextView>
+
+
+
+
+
+    <TextView
+        android:id="@+id/field5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/notSynced_field"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/field5"
+        android:layout_marginLeft="15dp"
+        android:inputType="text"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/field6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/name_field"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="Length[ms]" />
+
+
+
+
+    <EditText
+        android:id="@+id/length_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/field6"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberPassword"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+
+
+    <TextView
+        android:id="@+id/field7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/length_field"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="Plays" />
+
+    <EditText
+        android:id="@+id/plays_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/field7"
+        android:inputType="numberPassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/field8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/plays_field"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="Start[sec]" />
+
+    <EditText
+        android:id="@+id/start_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/field8"
+        android:layout_marginLeft="15dp"
+        android:inputType="numberPassword"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/field9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/start_field"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="Stop[sec]" />
+
+
+    <EditText
+        android:id="@+id/stop_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/field9"
+        android:layout_marginLeft="15dp"
+        android:inputType="numberPassword"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>
