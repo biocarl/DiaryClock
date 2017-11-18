@@ -1,1 +1,1 @@
-include ':AudiowaveProject:audiowave',':app'
+include ':app'
